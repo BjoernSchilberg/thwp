@@ -2,20 +2,12 @@
 
 <g id="hathi" transform="scale(1,1)">
   
-  <!-- base -->
-  <!-- g>
-    <path d="M 0 32 l 64 -32 l -64 -32 l -64 32 z" stroke="black" fill="transparent"/>
-  </g -->
-
   <!-- right ear -->
   <g transform="skewY(0)">
     <path d="M 45 -64 s 24 -32 0 48 z"
       stroke="#6495ed" fill="#6495ed"
       stroke-width="1"
       stroke-linecap="round" stroke-linejoin="round"/>
-      <animateTransform attributeName="transform" type="skewY"
-       from="0" to="-5" dur="7s" repeatCount="indefinite"
-       values="0;0;-5;0;0" keyTimes="0;0.5;0.51;0.52;1"/>     
   </g>
 
   <!-- background -->
@@ -41,34 +33,12 @@
     <rect x="27" y="0" width="22" height="24" rx="2" ry="2" fill="#6495ed"/>          
     <!-- eyes -->
     <g>
-      <ellipse cx="12.5" cy="-30" rx="5" ry="5" fill="white" stroke="white">
-      <animate dur="10s" repeatCount="indefinite" calcMode="linear"
-        attributeName="ry" from="5" to = "0" values="5; 5; 0; 5; 5"
-        keyTimes="0; 0.5; 0.51; 0.52; 1"/>
-      </ellipse>
-      <ellipse cx="12.5" cy="-28" rx="2" ry="2" fill="black" stroke="black">
-        <animate dur="10s" repeatCount="indefinite" calcMode="linear"
-          attributeName="ry" from="2" to = "0" values="2; 2; 0; 2; 2"
-          keyTimes="0; 0.5; 0.51; 0.52; 1"/>
-        <animateMotion dur="10s" repeatCount="indefinite" calcMode="linear"
-          values="0,0;0,0;-2,-2;-2,-2;0,0;0,0;2,-2;2,-2;0,0;0,0"
-          keyTimes="0; 0.2; 0.21; 0.3; 0.31;0.7;0.71;0.8;0.81;1"/>
-      </ellipse>
+      <ellipse cx="12.5" cy="-30" rx="5" ry="5" fill="white" stroke="white"/>
+      <ellipse cx="12.5" cy="-28" rx="2" ry="2" fill="black" stroke="black"/>
     </g>
     <g>
-      <ellipse cx="40.5" cy="-30" r="5" fill="white" stroke="white">
-        <animate dur="10s" repeatCount="indefinite" calcMode="linear"
-          attributeName="ry" from="5" to = "0" values="5; 5; 0; 5; 5"
-          keyTimes="0; 0.51; 0.52; 0.53; 1"/>
-      </ellipse>
-      <ellipse cx="40.5" cy="-28" r="2" fill="black" stroke="black">
-        <animate dur="10s" repeatCount="indefinite" calcMode="linear"
-          attributeName="ry" from="2" to = "0" values="2; 2; 0; 2; 2"
-          keyTimes="0; 0.505; 0.515; 0.525; 1"/>
-        <animateMotion dur="10s" repeatCount="indefinite" calcMode="linear"
-          values="0,0;0,0;-2,-2;-2,-2;0,0;0,0;2,-2;2,-2;0,0;0,0"
-          keyTimes="0; 0.2; 0.21; 0.3; 0.31;0.7;0.71;0.8;0.81;1"/>
-      </ellipse>
+      <ellipse cx="40.5" cy="-30" rx="5" ry="5" fill="white" stroke="white"/>
+      <ellipse cx="40.5" cy="-28" rx="2" ry="2" fill="black" stroke="black"/>
     </g>
   </g>
 
@@ -88,9 +58,6 @@
         stroke="#6495ed" fill="#6495ed"
         stroke-width="1"
         stroke-linecap="round" stroke-linejoin="round"/> 
-      <animateTransform attributeName="transform" type="skewY"
-        from="0" to="20" dur="7s" repeatCount="indefinite"
-        values="0;0;20;0;0" keyTimes="0;0.5;0.51;0.52;1"/>
     </g>
 
   <!-- top -->
@@ -125,12 +92,7 @@
       stroke-width="10"
       stroke-linecap="round" stroke-linejoin="round">
     </path>
-    <animateTransform dur="2s" attributeName="transform" type="rotate" values="0 28.5 -38; 3 28.5 -38; 0 28.5 -38; -3  28.5 -38; 0 28.5 -38;" repeatCount="indefinite"/>  
   </g>
-
-<!-- animateMotion id="walk" dur="1s" from="0,0" to="-64,32"
-  values="0,0;8,0;16,8;24,8;32,16;40,16;48,24;56,24;64,32"
-  repeatCount="10"/ -->
 
 </g>
 
