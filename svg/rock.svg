@@ -1,0 +1,23 @@
+<svg viewBox="-80 -160 160 320" xmlns="http://www.w3.org/2000/svg">
+
+<g id="tree" transform="scale(1,1)">  
+  <!-- base -->
+  <!-- g>
+    <path d="M 0 32 l 64 -32 l -64 -32 l -64 32 z" stroke="black" fill="transparent"/>
+  </g -->
+
+  
+  <g>
+    <path 
+        d="M 0 24 l 48 -24 l 0 -48 l -48 -24 l -48 24 l 0 48 z"
+        fill="lightgray" stroke="darkgray"
+        stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+    />
+    <path 
+        d="M 0 -24 l 48 -24 M 0 -24 l -48 -24 M 0 -24 l 0 48"
+        fill="forestgreen" stroke="darkgray"
+        stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+    />
+  </g>
+</g>
+</svg>

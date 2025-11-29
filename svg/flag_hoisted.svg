@@ -1,0 +1,17 @@
+<svg viewBox="-100 -200 200 400" xmlns="http://www.w3.org/2000/svg">
+    <g id="goal">
+        <path d='M 2 -1 l 0 -128' stroke='sienna' stroke-width='10' stroke-linecap='round' />        
+        <path d='M 0 0 l 0 -128' stroke='tan' stroke-width='10' stroke-linecap='round' /> 
+        <path id='cloth' d='M 6 -96 l 0 -32 q 16 0 32 8 t 32 -2 l 0 32 q -16 8 -32 0 t -32 -6 z' stroke='black' fill='white'>
+        <animate attributeName="d" 
+                 from='M 6 -96 l 0 -32 q 16 0 32 8 t 32 -2 l 0 32 q -16 8 -32 0 t -32 -6 z'
+                 to='M 6 -96 l 0 -32 q 16 0 32 8 t 32 -2 l 0 32 q -16 8 -32 0 t -32 -6 z'
+                 values="M 6 -96 l 0 -32 q 16 0 32 8 t 32 -2 l 0 32 q -16 8 -32 0 t -32 -6 z;
+                 M 6 -96 l 0 -32 q 8 0 24 8 t 32 -2 l 0 32 q -16 8 -32 0 t -24 -6 z;
+                 M 6 -96 l 0 -32 q 16 0 32 8 t 32 -2 l 0 32 q -16 8 -32 0 t -32 -6 z"
+                 keyTimes="0;0.5;1"
+                 dur = "1s" repeatCount="indefinite"/>
+        </path>
+
+    </g>
+</svg>

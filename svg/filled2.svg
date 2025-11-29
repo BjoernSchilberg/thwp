@@ -1,0 +1,32 @@
+<svg viewBox="-80 -160 160 320" xmlns="http://www.w3.org/2000/svg">
+
+<g> 
+  <!-- base -->
+  <g>
+    <path d="M 0 96 l 64 -32 l -64 -32 l -64 32 z" stroke="black" fill="brown"/>
+  </g>
+  <g>
+    <path 
+        d="M 0 32 l 64 -32 l 0 -64 l -64 -32 l -64 32 l 0 64 z"
+        fill="lightgray" stroke="darkgray"
+        stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+    />
+    <path 
+        d="M 0 -32 l 64 -32"
+        fill="forestgreen" stroke="darkgray"
+        stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+    />
+    <path 
+        d="M 0 -32 l -64 -32"
+        fill="forestgreen" stroke="darkgray"
+        stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+    />
+    <path 
+        d="M 0 -32 l 0 64"
+        fill="forestgreen" stroke="darkgray"
+        stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+    />
+    <animateMotion id="drop" fill="freeze"  path="M 0 0 l 0 64" dur="0.1s" repeatCount="1" begin="indefinite" />    
+  </g>  
+</g>      
+</svg>

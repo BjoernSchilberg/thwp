@@ -1,0 +1,67 @@
+<svg viewBox="-100 -200 200 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- g>
+        <path d='M 0 32 l 64 -32 l -64 -32 l -64 32 z' stroke='black' fill='transparent'/>
+    <g-->
+    <g id="lion" transform="translate(-6,-3)">
+        <path d='M 0 -8 l -48 -24 l 48 -24 l 48 24' stroke-width='0' stroke='gold' fill='gold'/>
+        <path d='M 0 -8 l 48 -24 l 0 32 l -48 24 z' stroke-width='0' stroke='goldenrod' fill='goldenrod'/>
+        <path d='M 0 -8 l -48 -24 l 0 32 l 48 24 z' stroke-width='0' stroke='darkgoldenrod' fill='darkgoldenrod'/>
+        <path d='M -24 16 l 32 16 l 56 -28 l 0 -56 l -32 -16 l -56 28 z' stroke='saddlebrown' fill='sienna' stroke-width='1' />
+        <path d='M 8 32 l 0 -56 l 56 -28'  stroke='saddlebrown' fill='sienna' stroke-width='1' />
+        <path d='M 8 -24 l -32 -16'  stroke='saddlebrown' fill='sienna' stroke-width='1'/>
+        <path d='M 16 -20 l 42 -21 l 0 32 l -42 21 z' stroke='goldenrod' fill='goldenrod' stroke-width='0'/>
+        <g transform="skewY(-26.5)">
+            <!-- circle cx="26" cy="-4" r="4" fill="white"/ -->
+            <path d="M 24 -1 l 4 0" stroke-linecap="round" stroke-width="2" stroke="black"/>
+            <path d="M 48 -1 l 4 0" stroke-linecap="round" stroke-width="2" stroke="black"/>
+            <!-- circle cx="48" cy="-4" r="4" fill="white"/ -->
+        </g>
+        <path d='M 30 -14 l 16 -8 l 6 12 l -8 4 z' stroke-width='0' stroke='gold' fill='gold'/>
+        <path d='M 30 -14 l 14 8 l 0 8 l -14 0 l  z' stroke-width='0' stroke='darkgoldenrod' fill='darkgoldenrod'/>
+        <path d='M 44 -6 l 8 -4  l 0 8 l -8 4 z' stroke-width='0' stroke='black' fill='black'/>
+        <g>
+        <text x="0" y="0" font-size="150%">Z</text>
+            <animateTransform attributeName="transform" 
+                type="scale" from="0" to="1" 
+                dur="2s" repeatCount="indefinite"
+                keyframes="0;1;0"
+                />
+            <animateMotion  
+                path="M 24 -36 l 25 -25"
+                dur="2s" repeatCount="indefinite"/>
+        </g>
+        <g>
+        <text x="0" y="0" font-size="150%">Z</text>
+            <animateTransform attributeName="transform" 
+                type="scale" from="0" to="1" 
+                dur="2s" repeatCount="indefinite"
+                keyframes="0;1;0" begin="0.5s"
+                />
+            <animateMotion  
+                path="M 24 -36 l 25 -25"
+                dur="2s" repeatCount="indefinite" begin="0.5s" />
+        </g>
+        <g>
+        <text x="0" y="0" font-size="150%">Z</text>
+            <animateTransform attributeName="transform" 
+                type="scale" from="0" to="1" 
+                dur="2s" repeatCount="indefinite"
+                keyframes="0;1;0" begin="1s"
+                />
+            <animateMotion  
+                path="M 24 -36 l 25 -25"
+                dur="2s" repeatCount="indefinite"  begin="1s"/>
+        </g>
+        <g>
+        <text x="0" y="0" font-size="150%">Z</text>
+            <animateTransform attributeName="transform" 
+                type="scale" from="0" to="1" 
+                dur="2s" repeatCount="indefinite"
+                keyframes="0;1;0" begin="1.5s"
+                />
+            <animateMotion  
+                path="M 24 -36 l 25 -25"
+                dur="2s" repeatCount="indefinite"  begin="1.5s"/>
+        </g>
+    </g>
+</svg>
