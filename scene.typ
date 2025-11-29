@@ -22,6 +22,12 @@
 #let elephant-size = tile-w * 0.75
 #let elephant = image("svg/hathi.svg", width: elephant-size)
 
+// Hilfsfunktion: Platziere ein Objekt auf einer Kachel
+#let place-on-tile(row, col, obj, obj-width, offset-y: 0pt) = {
+  let (cx, cy) = tile-pos(row, col)
+  place(top + left, dx: cx - obj-width / 2, dy: cy - obj-width + offset-y, obj)
+}
+
 // Platziere alle Gras-Kacheln
 #for row in range(0, 5) {
   for col in range(0, 5) {
@@ -30,6 +36,5 @@
   }
 }
 
-// Platziere den Elefanten
-#let (ex, ey) = tile-pos(0, 0)
-#place(top + left, dx: ex - elephant-size * 0.5, dy: ey - elephant-size * 0.75, elephant)
+// Platziere den Elefanten auf Kachel (0, 0)
+#place-on-tile(0, 0, elephant, elephant-size, offset-y: elephant-size * 0.25)
