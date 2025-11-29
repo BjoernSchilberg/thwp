@@ -18,9 +18,27 @@
   origin-y + (col + row) * tile-h / 2,
 )
 
-#let grass = image("svg/grass.svg", width: image-w)
-#let elephant-size = tile-w * 0.75
-#let elephant = image("svg/hathi.svg", width: elephant-size)
+// Lade alle Objekte
+#let tiles = (
+  g: image("svg/grass.svg", width: image-w),
+  w: image("svg/water.svg", width: image-w),
+)
+
+#let objects = (
+  h: (img: image("svg/hathi.svg", width: tile-w * 0.75), size: tile-w * 0.75, offset: 0.25),
+  b: (img: image("svg/bananas.svg", width: tile-w * 1), size: tile-w * 1, offset: 0),
+  t: (img: image("svg/tree.svg", width: tile-w * 1), size: tile-w * 1, offset: 0),
+  r: (img: image("svg/rock.svg", width: tile-w * 1), size: tile-w * 1, offset: 0),
+)
+
+// Level-Definition
+#let level = (
+  "hgggw",
+  "ggtgw",
+  "gggbw",
+  "grggw",
+  "wwwww",
+)
 
 // Hilfsfunktion: Platziere ein Objekt auf einer Kachel
 #let place-on-tile(row, col, obj, obj-width, offset-y: 0pt) = {
@@ -28,13 +46,20 @@
   place(top + left, dx: cx - obj-width / 2, dy: cy - obj-width + offset-y, obj)
 }
 
-// Platziere alle Gras-Kacheln
-#for row in range(0, 5) {
-  for col in range(0, 5) {
-    let (cx, cy) = tile-pos(row, col)
-    place(top + left, dx: cx - image-w / 2, dy: cy - image-h / 2, grass)
+// Rendere das Level
+#for (row, line) in level.enumerate() {
+  for (col, char) in line.clusters().enumerate() {
+    // Platziere Basis-Kachel (g oder w)
+    let tile-char = if char in ("h", "b") { "g" } else { char }
+    if tile-char in tiles {
+      let (cx, cy) = tile-pos(row, col)
+      place(top + left, dx: cx - image-w / 2, dy: cy - image-h / 2, tiles.at(tile-char))
+    }
+    
+    // Platziere Objekt (h oder b) falls vorhanden
+    if char in objects {
+      let obj = objects.at(char)
+      place-on-tile(row, col, obj.img, obj.size, offset-y: obj.size * obj.offset)
+    }
   }
 }
-
-// Platziere den Elefanten auf Kachel (0, 0)
-#place-on-tile(0, 0, elephant, elephant-size, offset-y: elephant-size * 0.25)
