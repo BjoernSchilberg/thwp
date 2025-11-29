@@ -50,7 +50,7 @@
 #for (row, line) in level.enumerate() {
   for (col, char) in line.clusters().enumerate() {
     // Platziere Basis-Kachel (g oder w)
-    let tile-char = if char in ("h", "b") { "g" } else { char }
+    let tile-char = if char in ("h", "b", "t", "r") { "g" } else { char }
     if tile-char in tiles {
       let (cx, cy) = tile-pos(row, col)
       place(top + left, dx: cx - image-w / 2, dy: cy - image-h / 2, tiles.at(tile-char))
