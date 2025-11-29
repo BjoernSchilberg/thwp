@@ -32,4 +32,4 @@
 
 // Platziere den Elefanten
 #let (ex, ey) = tile-pos(0, 0)
-#place(top + left, dx: ex - elephant-size / 2, dy: ey - elephant-size, elephant)
+#place(top + left, dx: ex - elephant-size * 0.5, dy: ey - elephant-size * 0.75, elephant)
