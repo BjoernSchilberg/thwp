@@ -32,14 +32,15 @@
   s: (img: image("svg/squash.svg", width: tile-w * 1), size: tile-w * 1, offset: 0),
   l: (img: image("svg/lion_0.svg", width: tile-w * 1.25), size: tile-w * 1.25, offset: 0),
   c: (img: image("svg/crate.svg", width: tile-w * 1.25), size: tile-w * 1.25, offset: 0),
-  k: (img: image("svg/crate_closed.svg", width: tile-w * 1.25), size: tile-w * 1.25, offset: 0),
+  C: (img: image("svg/crate_closed.svg", width: tile-w * 1.25), size: tile-w * 1.25, offset: 0),
   f: (img: image("svg/flag.svg", width: tile-w * 1.25), size: tile-w * 1.25, offset: 0),
+  F: (img: image("svg/flag_hoisted.svg", width: tile-w * 1.25), size: tile-w * 1.25, offset: 0),
 )
 
 // Level-Definition
 #let level = (
-  "hggfw",
-  "gktbw",
+  "hggFw",
+  "gCtbw",
   "scgbw",
   "lggrw",
   "wwwww",
@@ -55,7 +56,7 @@
 #for (row, line) in level.enumerate() {
   for (col, char) in line.clusters().enumerate() {
     // Platziere Basis-Kachel (g oder w)
-    let tile-char = if char in ("l", "h", "b", "t", "r", "s","c","k","f") { "g" } else { char }
+    let tile-char = if char in ("l", "h", "b", "t", "r", "s","c","C","f","F") { "g" } else { char }
     if tile-char in tiles {
       let (cx, cy) = tile-pos(row, col)
       place(top + left, dx: cx - image-w / 2, dy: cy - image-h / 2, tiles.at(tile-char))
