@@ -91,10 +91,15 @@
       size: tile-w * 1.25,
       offset: 0,
     ),
+    T: (
+      img: image(assets-path + "tomato.svg", width: tile-w * 0.35),
+      size: tile-w * 0.3,
+      offset: 0,
+    ),
   )
 
   // Liste der Objekt-Codes (für automatisches Gras darunter)
-  let object-codes = ("l", "h", "b", "t", "r", "s", "c", "C", "f", "F")
+  let object-codes = ("l", "h", "b", "t", "r", "s", "c", "C", "f", "F","T")
 
   // Hilfsfunktion: Platziere ein Objekt auf einer Kachel
   let place-on-tile(row, col, obj, obj-width, offset-y: 0pt) = {

@@ -12,8 +12,8 @@
   "gtggtggttgtg",
   "hggggggggggg",
   "gwwwwwwwwwwg",
+  "gTTTTTTTTTTg",
   "gbbbbbbbbbbg",
-  "gggggggggggg",
 )
 
 // Level 2: Mini-Szene
