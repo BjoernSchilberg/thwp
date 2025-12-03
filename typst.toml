@@ -1,0 +1,9 @@
+[package]
+name = "thwp"
+version = "0.0.1"
+entrypoint = "hathi_world.typ"
+authors = ["Bjoern Schilberg"]
+repository = "https://github.com/bjoernschilberg/thwp"
+
+description = "Package for rendering Abbozza! Hathi World"
+license = "MIT"
