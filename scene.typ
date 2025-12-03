@@ -12,7 +12,7 @@
   "gtggtggttgtg",
   "hggggggggggg",
   "gwwwwwwwwwwg",
-  "grrrrrrrrrrg",
+  "gbbbbbbbbbbg",
   "gggggggggggg",
 )
 
@@ -31,6 +31,6 @@
 )
 
 // Platziere mehrere Welten auf der Seite
-#create-world(level1, origin: (150pt, 60pt), scale: 1.0)
+#create-world(level1, origin: (150pt, 60pt), scale: 1.0, banana-value: 1)
 #create-world(level2, origin: (400pt, 40pt), scale: 0.8)
 #create-world(level3, origin: (450pt, 180pt), scale: 0.7)
