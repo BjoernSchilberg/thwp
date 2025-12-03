@@ -9,7 +9,7 @@
 /// - assets-path: Pfad zu den SVG-Dateien (relativ zum importierenden Dokument)
 #let create-world(
   level,
-  origin: (260pt, 80pt),
+  origin: none,
   scale: 1.0,
   tile-size: 25pt,
   assets-path: "svg/",
@@ -21,7 +21,19 @@
   let tile-w = image-w * 0.8
   let tile-h = image-h * 0.2
 
-  let (origin-x, origin-y) = origin
+  // Level-Dimensionen für automatische Positionierung
+  let rows = level.len()
+  let cols = level.fold(0, (max, line) => calc.max(max, line.clusters().len()))
+  let obj-overhang = image-h * 0.0625 // Puffer für hohe Objekte (Bäume, Flaggen)
+  let world-width = (rows + cols) * tile-w / 2 + tile-w * 0.5
+  let world-height = (rows + cols) * tile-h / 2 + image-h + obj-overhang
+
+  // Origin berechnen (intern bei none, sonst extern)
+  let (origin-x, origin-y) = if origin == none {
+    (world-width / 2, rows * tile-h / 2 + obj-overhang)
+  } else {
+    origin
+  }
 
   // Position einer Kachel berechnen
   let tile-pos = (row, col) => (
@@ -113,7 +125,7 @@
   }
 
   // Rendere das Level
-  {
+  let render-content = {
     for (row, line) in level.enumerate() {
       for (col, char) in line.clusters().enumerate() {
         // Platziere Basis-Kachel (g oder w)
@@ -141,5 +153,12 @@
         }
       }
     }
+  }
+
+  // Bei automatischer Positionierung in Box wrappen, sonst direkt rendern
+  if origin == none {
+    box(width: world-width, height: world-height, render-content)
+  } else {
+    render-content
   }
 }

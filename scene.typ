@@ -1,9 +1,6 @@
 #import "hathi_world.typ": create-world
 
 #set page(
-  width: 600pt,
-  height: 400pt,
-  margin: 0pt,
   fill: rgb("#fcf7d5"),
 )
 
