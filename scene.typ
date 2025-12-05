@@ -7,7 +7,7 @@
 // Level 1: Hauptszene
 #let level1 = (
   "gtggtggttgtg",
-  "hggggggggggg",
+  "hggggggggggH",
   "gwwwwwwwwwwg",
   "gTTTTTTTTTTg",
   "gbbbbbbbbbbg",

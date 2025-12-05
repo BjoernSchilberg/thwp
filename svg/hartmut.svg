@@ -1,0 +1,106 @@
+<svg width="128" height="128" viewBox="-64 -96 128 128" xmlns="http://www.w3.org/2000/svg">
+
+<g id="hartmut" transform="scale(1,1)">
+  
+  <!-- right ear -->
+  <g transform="skewY(0)">
+    <path d="M 45 -64 s 24 -32 0 48 z"
+      stroke="#d85a8c" fill="#d85a8c"
+      stroke-width="1"
+      stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- background -->
+  <g>
+    <path d="M 0 22 l 48 -24 l 0 -64 l -48 -24 l -48 24 l 0 64 z" 
+      stroke-width="5" stroke-linejoin="round"
+      stroke="#e88aac" fill="#e88aac"
+    />
+    <path d="M 20 13 l 10 -5 l 0 -30 l -10 5 z"
+      stroke-width="1" stroke-linejoin="round"
+      stroke="#a83a6c" fill="#a83a6c"
+    />
+    <path d="M -20 13 l -10 -5 l 0 -30 l 10 5 z"
+      stroke-width="1" stroke-linejoin="round"
+      stroke="#a83a6c" fill="#a83a6c"
+    />
+  </g>
+
+  <!-- face -->
+  <g transform="skewY(-26.5)">
+    <rect x="1" y="-42" width="48" height="48" rx="2" ry="2" fill="#d85a8c"/>
+    <rect x="1" y="0" width="22" height="24" rx="2" ry="2" fill="#d85a8c"/>
+    <rect x="27" y="0" width="22" height="24" rx="2" ry="2" fill="#d85a8c"/>          
+    <!-- eyes -->
+    <g>
+      <ellipse cx="12.5" cy="-30" rx="5" ry="5" fill="white" stroke="white"/>
+      <ellipse cx="12.5" cy="-28" rx="2" ry="2" fill="black" stroke="black"/>
+    </g>
+    <g>
+      <ellipse cx="40.5" cy="-30" rx="5" ry="5" fill="white" stroke="white"/>
+      <ellipse cx="40.5" cy="-28" rx="2" ry="2" fill="black" stroke="black"/>
+    </g>
+  </g>
+
+  <!-- side -->
+  <g transform="skewY(26.5)">
+    <rect x="-49" y="-42" width="48" height="48" rx="2" ry="2" fill="#c84a7c"/>
+    <rect x="-49" y="0" width="22" height="24" rx="2" ry="2" fill="#c84a7c"/>
+    <rect x="-23" y="0" width="22" height="24" rx="2" ry="2" fill="#c84a7c"/>          
+  </g>
+    <!-- left ear -->
+    <g>
+      <path d="M -5 -42 s -54 -6 0 48 z"
+        stroke="#a83a6c" fill="#a83a6c"
+        stroke-width="1"
+        stroke-linecap="round" stroke-linejoin="round"/>  
+      <path d="M -5 -42 s -48 0 0 48 z"
+        stroke="#d85a8c" fill="#d85a8c"
+        stroke-width="1"
+        stroke-linecap="round" stroke-linejoin="round"/> 
+    </g>
+
+  <!-- top -->
+  <g>
+    <path d="M 0 -45 l 46 -23 l -46 -23 l -46 23 z" 
+      stroke-width="1" stroke-linejoin="round"
+      stroke="#e07a9c" fill="#e07a9c"
+    />
+    <!-- single hair -->
+    <path d="M 18 -61 l 0 -12"
+      stroke-width="3" stroke-linejoin="round" stroke-linecap="round"
+      stroke="black" fill="black"/>
+  </g>
+
+  <!-- trunk -->
+  <g>
+    <path d="M 26.5 -38 a 40 30 0 0 1 0 24 a 30 30 0 0 0 0 12"
+      stroke="#b84a7c" fill="none"
+      stroke-width="10"
+      stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 30.5 -38 a 40 30 0 0 1 0 24 a 30 30 0 0 0 0 12"
+      stroke="#e88aac" fill="none"
+      stroke-width="10"
+      stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 28.5 -38 a 40 30 0 0 1 0 24 a 30 30 0 0 0 0 12"
+      stroke="#d85a8c" fill="none"
+      stroke-width="10"
+      stroke-linecap="round" stroke-linejoin="round">
+    </path>
+  </g>
+
+  <!-- beard (small cloud-like tufts left and right of trunk) -->
+  <g transform="skewY(-26.5)">
+    <!-- left beard tuft -->
+    <circle cx="18" cy="0" r="3" fill="black"/>
+    <circle cx="14" cy="2" r="2.5" fill="black"/>
+    <circle cx="20" cy="3" r="2" fill="black"/>
+    <!-- right beard tuft -->
+    <circle cx="42" cy="0" r="3" fill="black"/>
+    <circle cx="46" cy="2" r="2.5" fill="black"/>
+    <circle cx="40" cy="3" r="2" fill="black"/>
+  </g>
+
+</g>
+
+</svg>

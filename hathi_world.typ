@@ -54,6 +54,11 @@
       size: tile-w * 0.75,
       offset: 0.25,
     ),
+    H: (
+      img: image(assets-path + "hartmut.svg", width: tile-w * 0.75),
+      size: tile-w * 0.75,
+      offset: 0.25,
+    ),
     b: {
       let svg = read(assets-path + "bananas.svg")
       let modified = svg.replace("9999", str(banana-value))
@@ -111,7 +116,7 @@
   )
 
   // Liste der Objekt-Codes (für automatisches Gras darunter)
-  let object-codes = ("l", "h", "b", "t", "r", "s", "c", "C", "f", "F","T")
+  let object-codes = ("l", "h", "b", "t", "r", "s", "c", "C", "f", "F","T","H")
 
   // Hilfsfunktion: Platziere ein Objekt auf einer Kachel
   let place-on-tile(row, col, obj, obj-width, offset-y: 0pt) = {
