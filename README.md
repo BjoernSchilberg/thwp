@@ -7,6 +7,12 @@
 #import "@preview/thwp:0.0.1": create-world
 ```
 
+## Examples
+
+- [test.pdf](scene.pdf)
+
+![Beispiele](scene.png)
+
 ## TODO
 
 - Erweiterbarkeit durch custom-tiles und custom-objects Parameter.
